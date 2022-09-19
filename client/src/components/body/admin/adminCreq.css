@@ -1,0 +1,31 @@
+.admin-Creq-main{
+	margin: 10px;
+}
+
+.admin-Creq-main table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: #3f5a91;
+}
+
+.admin-Creq-main td,.admin-Creq-main  th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+
+.admin-Creq-main  th{
+  letter-spacing: 1px;
+}
+
+.admin-Creq-main td a ,.admin-Creq-main td{
+  text-decoration: none;
+  color: #6c7293;
+}
+
+
+.admin-Creq-main  tr:nth-child(even) {
+    background-color: #5643ff29;
+}
+

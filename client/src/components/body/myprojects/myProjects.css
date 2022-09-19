@@ -1,0 +1,97 @@
+.grd-myprojects{
+    /* background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%); */
+    display: grid;
+    grid-template-columns: repeat(3 , minmax(100px,3fr));
+    grid-gap: 3em;
+}
+
+.grd-myprojects > div{
+    background-color: #fff;
+}
+
+.myCard:hover{
+    transform: scale(1.05);
+}
+
+.myCard{
+    box-shadow:0 10px 15px rgba(181,181,181,.7);
+    background:#fff;
+    padding: .5em;
+    border-radius:2% 2% 2% 2%;
+    transition: .4s;
+}
+
+.myproject-img{
+    width: 100%;
+    height: 12em;
+}
+
+.project-detail{
+    background:#ffffff;
+    border-radius:0 0 10% 10%;
+    padding: .8rem;
+    color:#000;
+}
+
+.flx-mycard-bottom{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.Card:hover{
+    transform: scale(1.02);
+    box-shadow:  -3px -3px 7px rgb(212, 209, 209), 3px 3px 7px #a3b1c6;
+}
+
+.flx-mycard-bottom button{
+    border: none;
+    background:#ffffff;
+    color:rgb(0, 0, 0);
+    font-size:1rem;
+    height:40px;
+    width: 200px;
+    box-shadow:inset 3px 3px 15px #b3b6b3;
+    border-radius: 1px;
+}
+
+.button-readmore{
+    width:130px;
+}
+
+.button-readmore:hover{
+    background: darkblue;
+    color: #fff;
+    border: none;
+    box-shadow:  2px 5px 10px silver;
+}
+
+.like-icon{
+    border-radius: 50%;
+    color: rgb(158, 144, 144);
+    font-size: 1.1em;
+    box-shadow:inset 3px 3px 15px #6f746f;
+
+}
+
+.like-icon:hover{
+    color: red;
+    box-shadow: 3px 3px 15px #6f746f;
+}
+
+
+@media(max-width:1200px){
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 70px;
+    }
+
+}
+
+@media (max-width: 700px){
+    .projects{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 70px;
+    }
+ 
+}

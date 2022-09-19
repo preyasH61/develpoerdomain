@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
+
+.user-profile-main-container{
+    background: #C9CCD3;
+    overflow: hidden !important;
+    background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+}
+
+.user-profile-heading{
+    font-family: 'Gelasio', cursive;
+    text-shadow: 3px 3px 5px rgb(175, 171, 171);
+    letter-spacing: 2px;
+}
+
+.user-profile-div{
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: inset -3px -3px 5px gray, inset 3px 3px 5px gray;
+    background-color: rgb(255, 255, 255);
+}
+
+.flx-user-info-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.user-personal-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-img{
+    height: 150px;
+    width: 150px;
+    margin: .5em;
+}
+
+.user-img > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30%;
+}
+
+.useName{
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.vertical-line{
+    margin-left: .7em;
+    width: 1px;
+    height: 250px;
+    background: silver;
+}
+
+.user-other-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-other-info  h5{
+    font-family: 'Bree Serif';
+    text-shadow: 3px 3px 5px rgb(175, 171, 171);
+
+}
+
+.info-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 35em;
+    color: gray;
+    letter-spacing: 1px;
+}
+
+.info-div b{
+    font-family: 'News Cycle', sans-serif;
+}
+
+.profile-update-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.profile-update-button button{
+    background: white;
+    border: none;
+    padding: 10px 25px;
+    color: rgb(167, 94, 196);
+    transition: .2s;
+    font-weight: bold;
+    box-shadow:  -2px -2px 10px rgb(199, 196, 196), 2px 2px 10px rgb(180, 179, 179);
+    border-radius: 5px;
+}
+
+.profile-update-button button:hover{
+    transform: scalex(1);
+    background: rgb(167, 94, 196);
+    box-shadow:  -3px -3px 7px rgb(199, 196, 196),  3px 3px 7px rgb(180, 179, 179);
+    color: white;
+  }

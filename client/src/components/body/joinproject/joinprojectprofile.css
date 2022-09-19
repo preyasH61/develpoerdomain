@@ -1,0 +1,224 @@
+/* Main Division */
+
+.grd-joinProjectContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: minmax(585px,auto);
+    grid-template-areas: "project-content project-content project-content project-content  owner-profile";
+    grid-gap: 2em;
+    padding: 1em;
+}
+
+.flx-projectContent{
+  grid-area: project-content;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  /* box-shadow:inset 3px 3px 10px gray,inset -1px -1px 10px gray; */
+  border-radius: 7px;
+  /* background: whitesmoke; */
+}
+
+/* division 1 */
+
+.project-title{
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+}
+
+/* division2 */
+
+.flx-projectDiv2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em;
+}
+
+.projectOverview{
+  border-radius: 5px;
+  padding: 1em;
+  width: 100%;
+  box-shadow: 2px 5px 10px silver;
+}
+
+.project-image{
+  padding-left: 1.5em;
+  width: 35em;
+  height: 12em ;
+}
+
+/* .project-image img{
+  height: 100%;
+  width: 100% ;
+} */
+
+/* division3 */
+
+.project-details{
+  padding: 1em;
+}
+
+.project-description{
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: 2px 5px 10px silver;
+}
+
+.project-requirement{
+  border-radius: 5px;
+  padding: 1em;
+  margin-top: 1em;
+  box-shadow: 2px 5px 10px silver;
+
+}
+
+/* division4 */
+
+.flx-project-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+
+/* RequestButton */
+
+.request-button {
+    width: 120px;
+    height: 45px;
+    background: none;
+    border: 2px solid #09e691;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: .4s;
+  }
+  
+  .request-button:hover {
+    width: 120px;
+    box-shadow: 0px 10px 10px rgba(116, 113, 113, 0.4);
+    border: none;
+    font-weight: bolder;
+  }
+  
+  .request-button > span, svg {
+    position: absolute;
+    color: #09e691;
+    fill: transparent;
+    transition: .4s;
+  }
+  
+  .request-button:hover span {
+    transition: .4s;
+    font-size: 16px;
+  }
+  
+  .request-button:focus {
+    outline: none;
+    box-shadow: none;
+    border: 2px solid transparent;
+    width: 50px;
+    border-left: 2px solid #09e691;
+    border-bottom: 2px solid #09e691;
+    animation: spin 2s 500ms forwards;
+  }
+  
+  .request-button:focus span {
+    color: transparent;
+  }
+  
+  .request-button:focus svg {
+    animation: check 500ms 2300ms forwards;
+  }
+  
+  @keyframes spin {
+    80% {
+      border: 2px solid transparent;
+      border-left: 2px solid #09e691;
+    }
+    100% {
+      transform: rotate(1080deg);
+      border: 2px solid #09e691;
+    }
+  }
+  
+  @keyframes check {
+    to {
+      fill: #09e691;
+    }
+  }
+  
+  @keyframes circle {
+    to {
+      border: 2px solid #09e691;
+    }
+  }
+
+/* owner-profile */
+
+.flx-ownerProfile{
+  grid-area: owner-profile;
+  padding: 1.1em;
+  /* box-shadow: 3px 3px 10px gray,-1px -1px 10px gray; */
+  border: 2px solid silver;
+  border-radius: 7px;
+  background-color: #fff;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+.owner-profile-img{
+  /* margin-bottom: 1em; */
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  margin: 15px auto;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+
+.owner-profile-img img{
+  height: 100%;
+  width: 100%;
+}
+
+.owner-profile-img > i{
+  font-size: 70px;
+  border: 2px solid #d6d9db;
+  border-radius: 40%;
+}
+
+.Button-showProfile{
+  margin-top: 3em;
+  justify-content: flex-end;
+}
+
+.Button-showProfile button{
+  border: 2px solid rgb(109, 189, 255);
+  background: none;
+  padding: 10px;
+  color: rgb(16, 126, 190);
+  transition: .2s;
+  transform: scalex(1);
+}
+
+.Button-showProfile button:hover{
+  transform: scalex(1.1);
+}

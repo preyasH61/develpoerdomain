@@ -1,0 +1,72 @@
+/* ------------------
+Main Home Page Section
+------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Rye&family=Tourney&display=swap');
+
+
+
+.flx-home{
+  display: flex;
+  flex-direction: row;
+}
+
+.flx-leftSide{
+  display: flex;
+  flex-direction: column;
+}
+
+.rightSide{ 
+  right: 0;
+  margin-left: 5em;
+  padding-left: 5em;
+  /* height: 100%;
+  width: 100%; */
+}
+
+.home-Img{
+  height: 100%;
+  width: 100%;
+}
+
+#home-div{
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+#home-div h2{
+  margin: 0 0 10px 0;
+  font-size: 2.5em;
+  font-weight: normal;
+  color: black;
+}
+
+#home-div .brand-name{
+  font-size: 1em;
+  color: #3498db;
+  font-weight: bolder;
+  font-family: 'Rampart One';
+}
+
+#home-div h5{
+  color: #484848;
+}
+
+#home-div .btn-homePage{
+  font-family: 'Mulish';
+  font-weight: 500;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 50px;
+  color: #3498db;
+  transition: 0.5s;
+  text-decoration: none;
+  box-shadow: inset -3px -3px 7px #aab2b9,inset 3px 3px 7px #aab2b9;
+}
+
+#home-div .btn-homePage:hover{
+  color: rgb(10, 202, 10);
+  box-shadow:  -8px -8px 12px #fff, 5px 5px 10px #aab2b9;
+}

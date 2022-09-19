@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@700&display=swap');
+
+
+
+.upload-project-main-container{
+    background: #C9CCD3;
+    background-image: linear-gradient(to top, #fdeeee 0%, #accbee 100%);
+}
+
+.heading-div{
+    font-family: 'Gelasio', cursive;
+    text-shadow: 3px 3px 5px rgb(175, 171, 171);
+    letter-spacing: 2px;
+}
+
+.upload-project-div{
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: inset -3px -3px 5px gray, inset 3px 3px 5px gray;
+    background-color: rgb(255, 255, 255);
+    border: 0px solid #52b3f3;
+}
+
+.button-upload{
+    margin: 1em;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.input-field{
+    margin-bottom: 2em;
+}
+
+label{
+    font-weight: bold;
+}

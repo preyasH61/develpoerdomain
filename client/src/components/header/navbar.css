@@ -1,0 +1,250 @@
+/*-------------
+Navbar
+-------------*/
+
+
+header{
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to right, #007adf 0%, #00ecbc 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    font-family: 'Mulish', serif;
+}
+
+.Logo{
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Mulish';
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav ol{
+    display: flex;
+    list-style: none;
+}
+
+.nav ol li{
+    margin: 0.5em;
+    letter-spacing: 1px;
+}
+
+.nav ol li a{
+    text-decoration: none;
+    padding: 0.2em 0.5em 0.9em 0.5em;
+    color: honeydew;
+    transition: all .4s;
+    position: relative;
+    z-index: 1;
+}
+
+.nav ol li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    transform-origin: bottom;
+    background-color: #6807F5;
+    transform: scale(0,0.1);
+    z-index: -1;
+    transition: all .3s;
+}
+
+.nav ol li a:hover::before{
+    transform: scale(1,0.1);
+}
+
+.nav ol li a:hover{
+    font-weight: bolder ;
+}
+
+.chk-icon{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    display: none;
+}
+
+.chk-icon::before{
+    content: '\f0c9';
+    margin: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-family:"Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.nav ol li a.active{
+    padding-top: 20px;
+    background-color: #6807F5;
+    color: #ffffff;
+    transition: .8s;
+}
+
+
+
+@media(max-width:1200px){
+
+    .Logo{
+        font-size: 1.2rem;
+    }
+    
+    .chk-icon{
+        display: flex;
+        z-index: 100;
+    }
+
+    header{
+        justify-content: space-between;
+        padding: 0 0.5em;
+    }
+
+    .nav{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        background: #52b3f3;
+        transform: translateY(-110%);
+        transition: all .4s;
+    }
+
+    input:checked ~ .nav{
+        transform: translateY(0%);
+    }
+
+    input:checked::before{
+        content: '\f00d';
+    }
+
+}
+
+
+
+@media (max-width: 700px){
+
+    .Logo{
+        font-size: 1.1rem;
+    }
+
+    .nav ol{
+        flex-direction: column;
+        text-align: center;
+        background: #52b3f3;
+    }
+
+    .nav ol li{
+        margin-bottom: 1em;
+    }
+    
+}
+
+/* Profile Dropdown  */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 0.9em;
+  }
+
+.dropdown-content a {
+    float: none;
+    color: black !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    background-image: linear-gradient(to right, #74befc 0%, #56f8d8 100%);
+  }
+  
+  .drop-nav:hover .dropdown-content {
+    display: block;
+  }
+
+.profile_dp{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+/* -------------------------Header.css--------------------------- */
+/* header{
+    width: 100%;
+    min-height: 100px;
+    background: #282c34;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 30px;
+} */
+/* header a{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+header ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    opacity: 0.7;
+} */
+/* header ul li:hover{
+    opacity: 1;
+} */
+
+
+/* --------- Dropdown ---------- */
+/* .drop-nav{
+    position: relative;
+    padding: 10px 0;
+}
+
+.drop-nav a{
+    text-transform: capitalize;
+    overflow: hidden;
+}
+
+.drop-nav .dropdown{
+    position: absolute;
+    background: #282c34;
+    width: 100%;
+    width: calc(100% + 30px);
+    top: 50px;
+    display: none;
+}
+
+.drop-nav .dropdown li{
+    display: block;
+}
+
+.drop-nav:hover .dropdown{
+    display: block;
+} */

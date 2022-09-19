@@ -1,0 +1,57 @@
+.deptContainer{ 
+    width: 100%;
+    padding: 0 2%;
+    margin-bottom: 5em;
+}
+
+.deptContainer h2{
+    padding-top: 2%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+}
+
+.deptContainer h2::after{
+    content: '';
+    background: #303ef7;
+    width: 120px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transform: translateX(45%);
+}
+
+.grd-deptRow{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(350px,3fr));
+    grid-gap: 30px;
+}
+
+.departments{
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+    transition: transform 0.5s; 
+    background: 0.5s ;
+    /* border: solid 1px black; */
+}
+
+.departments i{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #303ef7;
+}
+
+.departments h5{
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.departments:hover{
+    transform: scale(1.05);
+    box-shadow:  -3px -3px 7px rgb(212, 209, 209), 3px 3px 7px #a3b1c6;
+}

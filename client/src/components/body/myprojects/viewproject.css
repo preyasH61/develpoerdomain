@@ -1,0 +1,153 @@
+/* Main Division */
+
+.grd-joinProjectContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(100px,3fr));
+    /* grid-template-columns: repeat(auto-fit, 2fr); */
+    /* grid-template-rows: minmax(585px,auto); */
+    grid-template-areas: "project-content project-content project-content project-content  owner-profile";
+    grid-gap: 2em;
+    padding: 1em;
+    background-image: linear-gradient(-225deg, #6BBBFF 0%, #a4bed8 48%, #5D9FFF 100%);
+}
+
+.flx-projectContent{
+  grid-area: project-content;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  box-shadow: 2px 5px 10px silver;
+  border-radius: 7px;
+  background: #fff;
+}
+
+
+/* division2 */
+
+.flx-projectDiv2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1em;
+}
+
+.projectOverview{
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.project-image{
+  padding-left: 1.5em;
+  width: 35em;
+  height: 12em ;
+}
+
+
+/* division3 */
+
+.project-details{
+    padding: 1em;
+
+}
+
+.project-description{
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.project-requirement{
+  border-radius: 5px;
+  padding: 1em;
+  margin-top: 1em;
+
+}
+
+/* division4 */
+
+.flx-project-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+
+/* RequestButton */
+
+.request-button {
+    width: 120px;
+    height: 45px;
+    background: none;
+    border: 2px solid #09e691;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: .4s;
+  }
+  
+  .request-button:hover {
+    width: 120px;
+    box-shadow: 0px 10px 10px rgba(116, 113, 113, 0.4);
+    border: none;
+    font-weight: bolder;
+  }
+  
+  .request-button > span, svg {
+    position: absolute;
+    color: #09e691;
+    fill: transparent;
+    transition: .4s;
+  }
+  
+  .request-button:hover span {
+    transition: .4s;
+    font-size: 16px;
+  }
+  
+  .request-button:focus {
+    outline: none;
+    box-shadow: none;
+    border: 2px solid transparent;
+    width: 50px;
+    border-left: 2px solid #09e691;
+    border-bottom: 2px solid #09e691;
+    animation: spin 2s 500ms forwards;
+  }
+  
+  .request-button:focus span {
+    color: transparent;
+  }
+  
+  .request-button:focus svg {
+    animation: check 500ms 2300ms forwards;
+  }
+  
+  @keyframes spin {
+    80% {
+      border: 2px solid transparent;
+      border-left: 2px solid #09e691;
+    }
+    100% {
+      transform: rotate(1080deg);
+      border: 2px solid #09e691;
+    }
+  }
+  
+  @keyframes check {
+    to {
+      fill: #09e691;
+    }
+  }
+  
+  @keyframes circle {
+    to {
+      border: 2px solid #09e691;
+    }
+  }
+  
